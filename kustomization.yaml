@@ -4,7 +4,7 @@ kind: Kustomization
 resources:
 - rollout.yaml
 - service.yaml
-# - ingress.yaml
+- ingress.yaml
 - preview-service.yaml
 images:
 - name: shariqrizvi/simple-frontend
