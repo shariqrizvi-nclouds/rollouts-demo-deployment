@@ -22,11 +22,11 @@ spec:
           ports:
           - containerPort: 3000
             protocol: TCP
-  strategy:
+#  strategy:
 #     blueGreen:
 #       activeService: rollouts-demo
 #       previewService: rollouts-demo-preview
-     canary: 
-       steps:
-       - setWeight: 20
-       - pause: {}
+#     canary: 
+#       steps:
+#       - setWeight: 20
+#       - pause: {}
