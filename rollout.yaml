@@ -28,6 +28,7 @@ spec:
        previewReplicaCount: 5
        autoPromotionEnabled: true
        autoPromotionSeconds: 30
+       scaleDownDelaySeconds: 30
 #     canary: 
 #       steps:
 #       - setWeight: 20
