@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: rollouts-demo
-          image: "shariqrizvi/simple-frontend:v5"
+          image: "shariqrizvi/simple-frontend:v7"
           ports:
           - containerPort: 3000
             protocol: TCP
