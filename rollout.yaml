@@ -18,15 +18,15 @@ spec:
     spec:
       containers:
         - name: rollouts-demo
-          image: "shariqrizvi/simple-frontend:v3"
+          image: "shariqrizvi/simple-frontend:v4"
           ports:
           - containerPort: 3000
             protocol: TCP
-#  strategy:
+  strategy:
 #     blueGreen:
 #       activeService: rollouts-demo
 #       previewService: rollouts-demo-preview
-#     canary: 
-#       steps:
-#       - setWeight: 20
-#       - pause: {}
+     canary: 
+       steps:
+       - setWeight: 20
+       - pause: {}
