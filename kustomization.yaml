@@ -9,3 +9,5 @@ resources:
 images:
 - name: shariqrizvi/simple-frontend
   newTag: v7
+- name: shariqrizvi/simple-frontend
+  newTag: v5
