@@ -23,8 +23,10 @@ spec:
             protocol: TCP
   strategy:
      blueGreen:
-       activeService: rollouts-demo
        previewService: rollouts-demo-preview
+       previewReplicaCount: 5
+       autoPromotionEnabled: true
+       autoPromotionSeconds: 30
 #     canary: 
 #       steps:
 #       - setWeight: 20
