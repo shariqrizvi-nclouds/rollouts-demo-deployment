@@ -26,7 +26,7 @@ spec:
        activeService: rollouts-demo
        previewService: rollouts-demo-preview
        previewReplicaCount: 2
-       autoPromotionEnabled: true
+       autoPromotionEnabled: false
        autoPromotionSeconds: 30
        scaleDownDelaySeconds: 30
 #    canary: #Indicates that the rollout should use the Canary strategy
