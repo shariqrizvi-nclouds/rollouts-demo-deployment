@@ -48,3 +48,5 @@ Password: kubectl get pods -n argocd -l app.kubernetes.io/name=argocd-server -o 
 Login: argocd login localhost:8080
 
 Port Forwarding: kubectl port-forward svc/argocd-server -n argocd 8080:443
+
+In chrome: https://localhost:8080/
