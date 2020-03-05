@@ -30,8 +30,8 @@ spec:
        autoPromotionSeconds: 300
        scaleDownDelaySeconds: 300
 #    canary: #Indicates that the rollout should use the Canary strategy
-#      maxSurge: "10%"
-#      maxUnavailable: 1
+#      maxSurge: "50%"
+#      maxUnavailable: 0
 #      steps:
 #      - setWeight: 50
 #      - pause:
