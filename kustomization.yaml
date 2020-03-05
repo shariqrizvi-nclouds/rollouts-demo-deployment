@@ -6,6 +6,6 @@ resources:
 - service.yaml
 - ingress.yaml
 - preview-service.yaml
--images:
+images:
 - name: shariqrizvi/simple-frontend
   newTag: v8
