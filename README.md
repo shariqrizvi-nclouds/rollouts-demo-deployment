@@ -41,12 +41,14 @@ kubectl apply -n argo-rollouts -f https://raw.githubusercontent.com/argoproj/arg
 
 kubectl-argo-rollouts list rollouts --namespace rollouts-demo
 
+### Login 
+
+Port Forwarding: kubectl port-forward svc/argocd-server -n argocd 8080:443
+
 Login: argocd login localhost:8080
 
 usename: admin
 
 Password: kubectl get pods -n argocd -l app.kubernetes.io/name=argocd-server -o name | cut -d'/' -f 2
-
-Port Forwarding: kubectl port-forward svc/argocd-server -n argocd 8080:443
 
 In chrome: https://localhost:8080/
