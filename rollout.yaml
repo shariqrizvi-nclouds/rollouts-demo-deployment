@@ -5,7 +5,7 @@ metadata:
   labels:
     app: rollouts-demo
 spec:
-  replicas: 4
+  replicas: 2
   revisionHistoryLimit: 3
   selector:
     matchLabels:
@@ -22,17 +22,17 @@ spec:
           - containerPort: 3000
             protocol: TCP
   strategy:
-#    blueGreen:
-#       activeService: rollouts-demo
-#       previewService: rollouts-demo-preview
-#       previewReplicaCount: 2
-#       autoPromotionEnabled: false
-#       autoPromotionSeconds: 300
-#       scaleDownDelaySeconds: 300
-    canary: #Indicates that the rollout should use the Canary strategy
-      maxSurge: "50%"
-      maxUnavailable: 0
-      steps:
-      - setWeight: 50
-      - pause:
-          duration: 120 # seconds
+    blueGreen:
+       activeService: rollouts-demo
+       previewService: rollouts-demo-preview
+       previewReplicaCount: 2
+       autoPromotionEnabled: false
+       autoPromotionSeconds: 300
+       scaleDownDelaySeconds: 300
+#    canary: #Indicates that the rollout should use the Canary strategy
+#      maxSurge: "50%"
+#      maxUnavailable: 0
+#      steps:
+#      - setWeight: 50
+#      - pause:
+#          duration: 120 # seconds
