@@ -8,4 +8,4 @@ resources:
 - preview-service.yaml
 images:
 - name: shariqrizvi/simple-frontend
-  newTag: v8
+  newTag: v7
