@@ -5,3 +5,7 @@ resources:
 - rollout.yaml
 - service.yaml
 - ingress.yaml
+- preview-service.yaml
+images:
+- name: shariqrizvi/simple-frontend
+  newTag: v7
